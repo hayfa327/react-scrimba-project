@@ -1,7 +1,7 @@
 body {
   padding: 20px;
-  background: #729ae9;
-  color: white;
+  background: #b8bbc0;
+  color: rgb(34, 4, 82);
 };
 
 h1 {
@@ -31,4 +31,9 @@ h1 {
 
 .imgLogo {
   width: 80px;
+}
+
+.haifa {
+  color: black;
+  font-size: 70px;
 }
