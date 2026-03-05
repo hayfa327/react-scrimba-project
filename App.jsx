@@ -1,12 +1,12 @@
-import MainContent from "./components/MainContent"; 
-import Navbar from "./components/Navbar";
+import SecondHeader from "./secondCoåponents/SecondHeader"
+import ContentArticil  from "./enter"
 
 
 export default function App() {
   return(
-  <> 
-     <Navbar />
-      <MainContent/>
-     </>
+    <> 
+  <SecondHeader />
+  <ContentArticil />
+  </>
   )
-}
+}; 
