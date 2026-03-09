@@ -1,14 +1,15 @@
+import Joke from "./contact";
+import jokeData from "./jokeData";
  
 
+export default function App() {
+const jokeElement = jokeData.map((joke) => {
+  return <Joke setup={joke.setup}  punchline={joke.punchline} />
+});
 
- export default function App { 
-  const nums =[1, 2, 3, 4 ]
-  const newArray = nums.map(function(num) {
-    return num * num
-  }
- 
-  
-  ) }
-  
-  console.log(newArray)
-
+  return (
+    <main>
+ {jokeElement}
+    </main>
+  )
+}
