@@ -1,12 +1,20 @@
 
-const names = ["haifa", "salma", "said", "choukri"]
+const nums = [1, 2, 3, 4, 5]
+const numsArray = nums.map(num => {  num * num 
+})
 
- const capitalized = names.map(
-  (letter) => {
-    return letter[0].toUpperCase.letter.slice(1)
-  }
- )
-console.log(capitalized)
+console.log(numsArray)
+
+
+
+
+const names = ["haifa", "samira", "charkie"]
+const namesFirst = names.map(letter => { letter[0].toUpperCase() + letter.slice(1)
+}
+)
+console.log(namesFirst)
+
+
 
 
 const pokemon = ["Bullo", "Chillo", "dipoo"]

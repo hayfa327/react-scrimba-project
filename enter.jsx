@@ -1,20 +1,10 @@
-export default function ContentArticil() {
+export default function ContentArticil(props) {
   return (
     <section>
       <article>
-        <img src="./src/assets/logo.png" alt="picture" />
-        <h1>Paris is the dream City </h1>
-        <p>I would love to have tickect in sheap price and good place , I love you </p>
-      </article>
-        <article>
-        <img src="./src/assets/logo.png" alt="picture" />
-        <h1>Paris is the dream City </h1>
-        <p>I would love to have tickect in sheap price and good place , I love you </p>
-      </article>
-        <article>
-        <img src="./src/assets/logo.png" alt="picture" />
-        <h1>Paris is the dream City </h1>
-        <p>I would love to have tickect in sheap price and good place , I love you </p>
+        <img src={props.img.scr}
+        alt={props.img.alt} />
+        <h1> {props.title} </h1>
       </article>
     </section>
   )
