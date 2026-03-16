@@ -1,19 +1,20 @@
-import <React></React> from "react";
+import React from "react"
 
 
 export default function App() {
 
+const [isGoingOut, setIsGoingOut] = React.useState(false)
+
+function changeMind() {
+  setIsGoingOut(prev => !prev)
+}
+
+return (
+  <main>
+    <h1 className="title">Do I feel tierd out this night</h1>
+    <button  onClick={changeMind} className="value"> {isGoingOut ? "yes" : "No"} </button>
+  </main>
+)
 
 
-
-  return (
-    <main className="container">
-      <h1>How many items in this section </h1>
-      <div> 
-      <button className="minus" aria-label="decrease count">-</button>
-      <h2 className="count"> {count} </h2>
-      <button className="plus" aria-label="Increase count">-</button>
-</div>
-    </main>
-  )
 }
